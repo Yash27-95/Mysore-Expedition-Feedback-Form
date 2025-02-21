@@ -105,10 +105,12 @@ form{
 }
 
 input, textarea{
+    font-family: inherit;
     width: 100%;
     border: 2px solid gray;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 textarea{
