@@ -1,0 +1,167 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2em;
+    background-image: url("images/me1.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 2em;
+    padding-right: 2em; 
+    padding-top: 1em;
+    align-items: center;
+}
+
+h1 {
+   font-size: 2.5rem;
+   font-weight: 300;
+   text-shadow: 0 1px black; 
+   text-align: center;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.top-text, .beta-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.top-text {
+    margin-top: 0;
+    padding-top: 0.25em;
+    text-transform: uppercase;
+    border-top: 5px solid #EEEEEE;
+    order: -1
+}
+
+.beta-text {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.img-main{
+    width: 40%;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #222831;
+}
+
+h2>span{
+    color: #76ABAE;
+}
+
+.subheading{
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    font-size: small; 
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.fine-print {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: lightslategray
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px solid gray;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn{
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #76ABAE;
+    color: #fff;
+    margin-top: 1em;
+}
+
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border: 2px solid #76ABAE;
+    background-color: #EEEEEE;
+    color: #76ABAE;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #EEEEEE;
+    color: #76ABAE;
+}
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+    
+    .intro, .main-content{
+        width: 50%;
+    }
+    
+    .intro {
+        min-height: 100vh;
+    }
+    
+    h1{
+        font-size: 5vw;
+    }
+    
+}
